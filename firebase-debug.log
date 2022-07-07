@@ -1,1 +1,109 @@
 [debug] [2022-07-07T02:10:56.981Z] ----------------------------------------------------------------------
+[debug] [2022-07-07T02:10:56.983Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nam\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-07T02:10:56.984Z] CLI Version:   11.2.0
+[debug] [2022-07-07T02:10:56.984Z] Platform:      win32
+[debug] [2022-07-07T02:10:56.984Z] Node Version:  v16.14.0
+[debug] [2022-07-07T02:10:56.985Z] Time:          Thu Jul 07 2022 09:10:56 GMT+0700 (Giờ Đông Dương)
+[debug] [2022-07-07T02:10:56.985Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-07T02:10:56.991Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-07T02:10:56.992Z] > authorizing via signed-in user (thanhnam.thai01@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\IDE\VSCode\ReactJS\realtime-chat-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-07T02:13:01.240Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-07-07T02:13:01.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-07-07T02:13:01.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project realtime-chat-2e023 (Realtime Chat) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-07-07T02:13:07.939Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-07-07T02:13:13.240Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com 200
+[debug] [2022-07-07T02:13:13.241Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-07-07T02:13:13.242Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-07-07T02:13:15.053Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-07-07T02:13:15.054Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-07-07T02:13:25.062Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-07-07T02:13:26.686Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com 200
+[debug] [2022-07-07T02:13:26.686Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/realtime-chat-2e023/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-07-07T02:13:26.689Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/realtime-chat-2e023 [none]
+[debug] [2022-07-07T02:13:27.097Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/realtime-chat-2e023 200
+[debug] [2022-07-07T02:13:27.097Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/realtime-chat-2e023 {"projectId":"realtime-chat-2e023","projectNumber":"632154692591","displayName":"Realtime Chat","name":"projects/realtime-chat-2e023","resources":{"hostingSite":"realtime-chat-2e023"},"state":"ACTIVE"}
+[debug] [2022-07-07T02:13:38.708Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances databaseId=realtime-chat-2e023-default-rtdb&validateOnly=true
+[debug] [2022-07-07T02:13:38.708Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2022-07-07T02:13:39.729Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances 200
+[debug] [2022-07-07T02:13:39.729Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances {"name":"projects/632154692591/locations/asia-southeast1/instances/realtime-chat-2e023-default-rtdb","project":"projects/632154692591","databaseUrl":"https://realtime-chat-2e023-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2022-07-07T02:13:39.731Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances databaseId=realtime-chat-2e023-default-rtdb
+[debug] [2022-07-07T02:13:39.731Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2022-07-07T02:13:40.988Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances 200
+[debug] [2022-07-07T02:13:40.989Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/realtime-chat-2e023/locations/asia-southeast1/instances {"name":"projects/632154692591/locations/asia-southeast1/instances/realtime-chat-2e023-default-rtdb","project":"projects/632154692591","databaseUrl":"https://realtime-chat-2e023-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2022-07-07T02:13:56.803Z] >>> [apiv2][query] GET https://realtime-chat-2e023-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2022-07-07T02:13:58.646Z] <<< [apiv2][status] GET https://realtime-chat-2e023-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2022-07-07T02:13:58.647Z] <<< [apiv2][body] GET https://realtime-chat-2e023-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for realtime-chat-2e023-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-07-07T02:14:18.473Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-07-07T02:14:18.626Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-07-07T02:14:18.626Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.4","browserURL":"https://www.gstatic.com/firebasejs/9.8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.4/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.4/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.4/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.4/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.4/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.4/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.4/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.4/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.4/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\IDE\VSCode\ReactJS\realtime-chat-app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=987174265&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-07-07T02:14:42.109Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-07-07T02:14:42.110Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-07-07T02:14:42.540Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-07-07T02:14:42.541Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-07-07T02:14:42.546Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-07-07T02:14:42.998Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-07-07T02:14:42.998Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"thanhnam2811","id":74032428,"node_id":"MDQ6VXNlcjc0MDMyNDI4","avatar_url":"https://avatars.githubusercontent.com/u/74032428?v=4","gravatar_id":"","url":"https://api.github.com/users/thanhnam2811","html_url":"https://github.com/thanhnam2811","followers_url":"https://api.github.com/users/thanhnam2811/followers","following_url":"https://api.github.com/users/thanhnam2811/following{/other_user}","gists_url":"https://api.github.com/users/thanhnam2811/gists{/gist_id}","starred_url":"https://api.github.com/users/thanhnam2811/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/thanhnam2811/subscriptions","organizations_url":"https://api.github.com/users/thanhnam2811/orgs","repos_url":"https://api.github.com/users/thanhnam2811/repos","events_url":"https://api.github.com/users/thanhnam2811/events{/privacy}","received_events_url":"https://api.github.com/users/thanhnam2811/received_events","type":"User","site_admin":false,"name":"Thái Thành Nam","company":"Đại học Sư Phạm Kỹ Thuật Thành Phố Hồ Chí Minh","blog":"https://www.facebook.com/thanhnam.thai2811/","location":null,"email":null,"hireable":null,"bio":"Hello world!","twitter_username":null,"public_repos":17,"public_gists":0,"followers":0,"following":1,"created_at":"2020-11-06T02:34:21Z","updated_at":"2022-06-20T01:14:03Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":217431,"collaborators":6,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as thanhnam2811 
+[info] 
+[debug] [2022-07-07T02:15:21.054Z] >>> [apiv2][query] GET https://api.github.com/repos/thanhnam2811/realtime-chat-app/actions/secrets/public-key type=owner
+[debug] [2022-07-07T02:15:21.411Z] <<< [apiv2][status] GET https://api.github.com/repos/thanhnam2811/realtime-chat-app/actions/secrets/public-key 404
+[debug] [2022-07-07T02:15:21.411Z] <<< [apiv2][body] GET https://api.github.com/repos/thanhnam2811/realtime-chat-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-07-07T02:15:23.748Z] >>> [apiv2][query] GET https://api.github.com/repos/thanhnam2811/realtime-chat-app/actions/secrets/public-key type=owner
+[debug] [2022-07-07T02:15:24.121Z] <<< [apiv2][status] GET https://api.github.com/repos/thanhnam2811/realtime-chat-app/actions/secrets/public-key 404
+[debug] [2022-07-07T02:15:24.122Z] <<< [apiv2][body] GET https://api.github.com/repos/thanhnam2811/realtime-chat-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-07-07T02:15:32.847Z] >>> [apiv2][query] GET https://api.github.com/repos/realtime-chat-app/actions/secrets/public-key type=owner
+[debug] [2022-07-07T02:15:33.206Z] <<< [apiv2][status] GET https://api.github.com/repos/realtime-chat-app/actions/secrets/public-key 404
+[debug] [2022-07-07T02:15:33.206Z] <<< [apiv2][body] GET https://api.github.com/repos/realtime-chat-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-07-07T02:15:33.875Z] >>> [apiv2][query] GET https://api.github.com/repos/realtime-chat-app/actions/secrets/public-key type=owner
+[debug] [2022-07-07T02:15:34.236Z] <<< [apiv2][status] GET https://api.github.com/repos/realtime-chat-app/actions/secrets/public-key 404
+[debug] [2022-07-07T02:15:34.236Z] <<< [apiv2][body] GET https://api.github.com/repos/realtime-chat-app/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
